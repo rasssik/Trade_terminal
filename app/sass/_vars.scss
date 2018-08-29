@@ -1,0 +1,35 @@
+$default-font: "OpenSans",
+arial;
+$accent: #ffae00;
+$font-size: 16px;
+$line-height: 24px;
+$link:#268ad4;
+$text:#000;
+$text-grey:#858585;
+$light: #fff;
+// $b-color: #eff2f4; // Цвет разделителя блоков
+// $g-color: #b7b7b7; // Серый цвет текст
+// $t-color: #191919; // цвет текста
+// $h-color: #2b2b2b; // Цвет заголовков
+// $m-color: #0061d9; // Основной цвет
+// $m-color-b: #94bdef; // Основной цвет Border
+// $m-color-mob: #7e7e7e; // Основной цвет моб
+$hover-link: #268ad4; // Цвет ссылок при наведении
+// $dark-text: #2b2b2b;
+// $error-color: #ff4c4c;
+// $yellow-color: #ffd442;
+// $content-text: #191919;
+// $transition: all .3s ease;
+// $gr-color: #a4a4a4;
+// $gr1-color: #868686;
+// $form-color: #383838;
+// $btn-hover:#ffd442;
+// $gap: 16px; // Стандартный пробел между блоками
+// grid breakpoints
+$grid-breakpoints: ( xs:0, sm: 576px, md: 768px, lg: 992px, xl: 1280px);
+// grid containers
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1200px);
+// grid columns
+$grid-columns: 12 !default;
+$gutter: 30px !default;
+$gutter-xs: 12px !default;

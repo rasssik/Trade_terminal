@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+@@include('_includes/head.html')
+<style type="text/css" media="screen">
+	.section select {
+		display: none;
+	}
+</style>
+
+<body>
+	<div class="overlay"></div>
+
+	@@include('_includes/header.html') @@include('_includes/sidebar-left.html')
+	<main class="content content--chat">
+		<!-- <button class="toggle-sidebar" type="button">
+			<i class="fas fa-caret-right"></i>
+		</button> -->
+		<div class="chat">
+			<div class="chat__panel">
+				<div class="chat__panel__top">
+					<p>enquiries</p>
+					<ul class="choice">
+						<li class="choice__btn active">
+							<a href="#">unread</a>
+						</li>
+						<li class="choice__btn">
+							<a href="#">replied</a>
+						</li>
+						<li class="choice__btn">
+							<a href="#">all</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts-list">
+					<ul>
+						<li class="contact online unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Константин Подгор ампий </p>
+									<p class="preview">Здравствуйте, интересует ваши интересует ваши интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact online active unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Константин Константинопо</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact online unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-3.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Ефросинья Галоперидонова</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-4.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Амвросий Синицын</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-5.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-6.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-7.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-8.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-9.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-3.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-4.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-5.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-6.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-7.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-8.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-9.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-chat">
+				<div class="contact-profile">
+					<button class="btn-toogle-chat" type="button">
+						<i class="far fa-angle-left"></i>
+					</button>
+					<div class="contact-profile__title">
+						Амвросий Синицын
+					</div>
+					<ul class="list-links">
+						<li>
+							<a href="#" class="far fa-pencil-alt"></a>
+						</li>
+						<li>
+							<a href="#" class="far fa-trash-alt"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="messages">
+					<ul>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<p>интересует ваши</p>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<p>интересует ваши</p>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">16:34:68</span>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="message-input">
+					<form action="">
+						<div class="message-input__top">
+							<input class="" type="text" placeholder="Enter message:" />
+							<div class="action-panel">
+								<span class="icon far fa-image"></span>
+								<span class="icon fal fa-smile"></span>
+								<span class="icon fal fa-paperclip"></span>
+								<button type="submit" class="btn-link btn--light">send</button>
+							</div>
+						</div>
+					</form>
+					<div class="message-input__bottom">
+						I have recieved fiat money:
+						<a href="#">Approve</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>

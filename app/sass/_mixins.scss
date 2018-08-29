@@ -1,0 +1,173 @@
+// @import "mixins/_fonts.scss";
+// @import "mixins/_responsive.scss";
+// @import "_helpers.scss";
+// @import "mixins/_sections.scss";
+// @import "mixins/_buttons.scss";
+@mixin cf() {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin clear-fix-before() {
+  &:before {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin fa() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin border-color() {
+  border-bottom: 7px solid #fda626;
+  -webkit-border-image: url(../img/pattern-multi.png) 7 repeat;
+  -o-border-image: url(../img/pattern-multi.png) 7 repeat;
+  border-image: url(../img/pattern-multi.png) 7 repeat;
+}
+
+@mixin center() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%vafix {
+    font-size: 0;
+    &:before {
+        display: inline-block;
+        height: 100%;
+        content: "";
+        vertical-align: middle;
+    }
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%btn-flex {
+    @extend %flex-center;
+    &:after,
+    &:before {
+        flex: 1 0 auto;
+        content: '';
+    }
+}
+
+// import fonts
+//-----------------------------------------------------------------------------------
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $family;
+        src: url("#{$path}.eot");
+        src: url("#{$path}.eot?#iefix") format("embedded-opentype"),
+        url("#{$path}.woff") format("woff"),
+        url("#{$path}.ttf") format("truetype"),
+        url("#{$path}.svg##{$svg}") format("svg");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+// font size px to rem
+//-----------------------------------------------------------------------------------
+@mixin font-size($px-value) {
+    font-size: $px-value / $body-font-size + rem;
+}
+
+// letter spacing px to em
+//-----------------------------------------------------------------------------------
+@mixin letter-spacing($px-value,
+$font-size) {
+    letter-spacing: $px-value / $font-size + em;
+}
+
+// relative line height
+//-----------------------------------------------------------------------------------
+@mixin line-height($px-value,
+$font-size) {
+    line-height: $px-value / $font-size;
+}
+
+// gradients
+//-----------------------------------------------------------------------------
+@mixin gradient-horizontal($start-color: #555,
+$end-color: #333,
+$start-percent: 0%,
+$end-percent: 100%) {
+    background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+    background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}',
+    endColorstr='#{ie-hex-str($end-color)}',
+    GradientType=1);
+}
+
+@mixin gradient-vertical($start-color: #555,
+$end-color: #333,
+$start-percent: 0%,
+$end-percent: 100%) {
+    background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+    background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}',
+    endColorstr='#{ie-hex-str($end-color)}',
+    GradientType=0);
+}
+
+// ratio
+//-----------------------------------------------------------------------------------
+@mixin aspect-ratio($width,
+$height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: $height / $width * 100%;
+    }
+    >.ratio-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin center-center() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}

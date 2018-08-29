@@ -1,0 +1,64 @@
+/*
+  Центрируем элементы
+*/
+
+@mixin center-center() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*
+  Правильный способ скрывать любые элементы вместо display:none;
+*/
+
+@mixin invisible() {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+
+
+
+/*
+  Чтобы один блок не влиял на другой
+*/
+
+@mixin clear-fix() {
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+@mixin clear-fix-before() {
+    &:before {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+@mixin transition {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+@function rem($px, $base: $font_size) {
+    @return ($px / $base) * 1rem;
+}

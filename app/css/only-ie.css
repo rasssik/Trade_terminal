@@ -1,0 +1,23 @@
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .content-general {
+        display: block;
+    }
+
+    .content-general__image {
+        height: 100vh;
+        width: calc(100% - 600px);
+        min-height: 100vh;
+    }
+    .general-panel {
+        width: 600px;
+        text-align: center;
+    }
+    .general-panel__inner {
+        width: 280px;
+    }
+    .general-panel {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

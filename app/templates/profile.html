@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html> @@include('_includes/head.html')
+<style type="text/css" media="screen">
+.section select {
+    display: none;
+}
+</style>
+
+<body>
+    <div class="overlay"></div>@@include('_includes/header.html') @@include('_includes/sidebar-left.html')
+    <main class="content content--profile">
+        <button class="toggle-sidebar" type="button"><i class="fas fa-caret-right"></i>
+        </button>
+        <div class="content__top">
+            <div class="section section--profile profile">
+                <div class="profile__about">
+                    <div class="profile__about__image">
+                        <div class="profile__avatar-wrap"> <img src="img/photo-profile.jpg" alt=""> </div> <a class="btn-border--light popup-link" href="#">deposit game account</a> </div>
+                    <div class="profile__about__info">
+                        <div class="profile__name">Георгий Решетников</div>
+                        <div class="profile__description">
+                            <div class="profile__description__row profile__description__row--images">
+                                <div class="b-column b-column--title">Projects:</div>
+                                <div class="b-column b-column--value">
+                                    <ul class="list">
+                                        <li><img src="img/icon-game__1.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__2.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__3.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__4.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">joined network:</div>
+                                <div class="b-column b-column--value">13.04.2016</div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">Total funds:</div>
+                                <div class="b-column b-column--value">473 897.39 USD</div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">Last transaction:</div>
+                                <div class="b-column b-column--value">0.49573965 BTC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__bottom">
+                    <div class="section__title">Latest Transactions</div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>In/Out</th>
+                                    <th>Currency</th>
+                                    <th>Amount</th>
+                                    <th>Destination</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Sent</td>
+                                    <td>DASH</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Recieved</td>
+                                    <td>BTC</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Recieved</td>
+                                    <td>YOTA</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="buttons-wrap"> <a href="#" class="btn--dark" href="#">Send</a> <a href="#" class="btn--light" href="#">Recieve</a> </div>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__list">
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--red"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Bitcoin</div>
+                                    <div class="currency__percent"><span>23</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-bitcoin.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>17.38</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--yellow"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">civic</div>
+                                    <div class="currency__percent"><span>3</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-civic.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>9.56</span> USD <i class="fal fa-arrow-alt-down"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--light-blue"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Litecoin</div>
+                                    <div class="currency__percent"><span>1.8</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-litecoin.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>7.12</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--green"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Dash</div>
+                                    <div class="currency__percent"><span>7.2</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-dash.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>1.68</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--blue"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Etherium</div>
+                                    <div class="currency__percent"><span>45</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-etherium.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>367.38</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--pink"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">augur</div>
+                                    <div class="currency__percent"><span>23</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-augur.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>90.56</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-deposite-plus"> <i class="fas fa-plus"></i>
+            <div class="btn-deposite-plus__inner"> <span class="btn-deposite-plus__content">
+						Deposit account:
+					</span>
+                <a class="popup-link" href="#popup-deposit"><img src="img/walet.png" alt=""> via cold wallet</a>
+            </div>
+        </div>
+    </main>
+    <!-- @@include('_includes/popups.html') -->
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

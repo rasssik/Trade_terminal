@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+@@include('_includes/head.html')
+
+<body>
+    <div class="page-wrap">
+        @@include('_includes/header.html')
+        <main class="content-general">
+            <div class="content-general__panel general-panel general-panel--create-account">
+                <div class="general-panel__inner">
+                    <div class="general-panel__title">Log in existing account</div>
+                    <form action="">
+                        <div class="general-panel__form-control success">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="general-panel__form-control">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <a href="#" class="btn--light">Log in</a>
+                    </form>
+                    <ul class="list-links">
+                        <li>Already have an account?&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" title="">Log in</a></li>
+                        <li><a href="forgot_pass.html" title="">Forgot password</a></li>
+                    </ul>
+                    <div class="social">
+                        <h4>Login via social:</h4> @@include('_includes/social.html')
+                    </div>
+                </div>
+            </div>
+            <div class="content-general__image">
+                <div class="content-general__image__info">
+                    <h1>Welcome
+						to Even Pay!</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit vestibulum nunc, eget aliquam nisi maximus id. Suspendisse sed est libero. Ut mollis, tortor eu fringilla ultricies, magna diam fringilla mauris, ac iaculis augue enim sed lorem.
+						</h4>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

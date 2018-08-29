@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trade terminal</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta charset="utf-8" />
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="img/favicon/favicon.ico">
+    <link rel="icon" sizes="192x192" href="img/favicon/favicon-192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/only-ie.css" />
+    <style type="text/css" media="screen">
+    .section select {
+        display: none;
+    }
+    </style>
+</head>
+<style type="text/css" media="screen">
+	.section select {
+		display: none;
+	}
+</style>
+
+<body>
+	<div class="overlay"></div>
+
+	<!-- Section header Start -->
+<header class="header">
+    <a class="header__logo-mobile" href="index.html"><img src="img/logo-mobile.png" alt=""></a>
+    <div class="header__search form-search">
+        <form action="" method="post">
+            <button type="submit" class="fas fa-search form-search__submit"></button>
+            <input type="text" placeholder="Поиск" class="form-control ">
+        </form>
+    </div>
+    <ul class="header__navigation">
+        <li class="dropdown header__avatar avatar">
+            <a href="#" class="dropdown-toggle  ">
+				<span class="avatar__image">
+				<img src="img/avatar.png" alt=""></span>
+				Георгий Решетников
+			</a>
+            <ul class="dropdown-content">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle"><i class="far fa-envelope"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Some 1</a></li>
+                <li><a href="#">Some 2</a></li>
+                <li><a href="#">Some 3</a></li>
+                <li><a href="#">Some</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="messages-link dropdown-toggle"><i class="far fa-bell"></i><span class="badge">12</span></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Some 1</a></li>
+                <li><a href="#">Some 2</a></li>
+            </ul>
+        </li>
+        <li class="dropdown toggle-menu"><a href="#" class="dropdown-toggle"><i class="far fa-bars"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Георгий Решетников</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- Section header   End--> <aside class="sidebar sidebar__left">
+    <div class="sidebar__logo">
+        <img src="img/logo.png" alt="">
+    </div>
+
+    <nav>
+        <ul class="sidebar__navigation">
+            <li><a href=""><i class="icon fas fa-money-bill"></i>Balances</a></li>
+            <li><a href=""><i class="icon fal fa-chart-pie"></i>Trading</a></li>
+            <li><a href=""><i class="icon fas fa-arrows-alt-h"></i>Transactions</a></li>
+            <li><a href=""><i class="icon far fa-shield-check"></i>Bot arbitrage</a></li>
+            <li><a href=""><i class="icon fal fa-id-card"></i>Arbitrage</a></li>
+        </ul>
+        <div class="sidebar__btn-buy__wrap">
+            <a class="sidebar__btn-buy" href="#"><span class="fas fa-plus"></span>buy crypto</a>
+        </div>
+        <ul class="sidebar__navigation">
+            <li><a href=""><i class="fal fa-sliders-h"></i>Settings</a></li>
+            <li><a href=""><i class="far fa-info-square"></i>Help</a></li>
+        </ul>
+    </nav>
+</aside>
+	<main class="content content--chat">
+		<!-- <button class="toggle-sidebar" type="button">
+			<i class="fas fa-caret-right"></i>
+		</button> -->
+		<div class="chat">
+			<div class="chat__panel">
+				<div class="chat__panel__top">
+					<p>enquiries</p>
+					<ul class="choice">
+						<li class="choice__btn active">
+							<a href="#">unread</a>
+						</li>
+						<li class="choice__btn">
+							<a href="#">replied</a>
+						</li>
+						<li class="choice__btn">
+							<a href="#">all</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts-list">
+					<ul>
+						<li class="contact online unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Константин Подгор ампий </p>
+									<p class="preview">Здравствуйте, интересует ваши интересует ваши интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact online active unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Константин Константинопо</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact online unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-3.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Ефросинья Галоперидонова</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-4.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Амвросий Синицын</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-5.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-6.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-7.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-8.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-9.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-2.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact unread">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-3.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-4.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-5.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-6.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-7.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-8.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<div class="contact__avatar">
+									<div class="contact__avatar__wrap">
+										<img src="img/icon-chat-9.jpg" alt="" />
+									</div>
+								</div>
+								<div class="meta">
+									<p class="name">Евлампий Харлеев-Подгор</p>
+									<p class="preview">Здравствуйте, интересует ваши </p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-chat">
+				<div class="contact-profile">
+					<button class="btn-toogle-chat" type="button">
+						<i class="far fa-angle-left"></i>
+					</button>
+					<div class="contact-profile__title">
+						Амвросий Синицын
+					</div>
+					<ul class="list-links">
+						<li>
+							<a href="#" class="far fa-pencil-alt"></a>
+						</li>
+						<li>
+							<a href="#" class="far fa-trash-alt"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="messages">
+					<ul>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<p>интересует ваши</p>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<p>интересует ваши</p>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">16:34:68</span>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Добрый день, да. Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+							</div>
+						</li>
+						<li class="sent">
+							<div class="messages__text">
+								<p>Вас только BTC интересуют? Есть возможность купить другие валюты</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+						<li class="replies">
+							<div class="messages__avatar">
+								<div class="contact__avatar__wrap">
+									<img src="img/icon-chat-9.jpg" alt="" />
+								</div>
+							</div>
+							<div class="messages__text">
+								<p>Hello, I would like to buy 0.5849 BTC from you</p>
+								<p>Здравствуйте, договоримся?</p>
+								<span class="message__date">12:02:08</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="message-input">
+					<form action="">
+						<div class="message-input__top">
+							<input class="" type="text" placeholder="Enter message:" />
+							<div class="action-panel">
+								<span class="icon far fa-image"></span>
+								<span class="icon fal fa-smile"></span>
+								<span class="icon fal fa-paperclip"></span>
+								<button type="submit" class="btn-link btn--light">send</button>
+							</div>
+						</div>
+					</form>
+					<div class="message-input__bottom">
+						I have recieved fiat money:
+						<a href="#">Approve</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html> <head>
+    <meta charset="utf-8">
+    <title>Trade terminal</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta charset="utf-8" />
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="img/favicon/favicon.ico">
+    <link rel="icon" sizes="192x192" href="img/favicon/favicon-192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/only-ie.css" />
+    <style type="text/css" media="screen">
+    .section select {
+        display: none;
+    }
+    </style>
+</head>
+<style type="text/css" media="screen">
+.section select {
+    display: none;
+}
+</style>
+
+<body>
+    <div class="overlay"></div><!-- Section header Start -->
+<header class="header">
+    <a class="header__logo-mobile" href="index.html"><img src="img/logo-mobile.png" alt=""></a>
+    <div class="header__search form-search">
+        <form action="" method="post">
+            <button type="submit" class="fas fa-search form-search__submit"></button>
+            <input type="text" placeholder="Поиск" class="form-control ">
+        </form>
+    </div>
+    <ul class="header__navigation">
+        <li class="dropdown header__avatar avatar">
+            <a href="#" class="dropdown-toggle  ">
+				<span class="avatar__image">
+				<img src="img/avatar.png" alt=""></span>
+				Георгий Решетников
+			</a>
+            <ul class="dropdown-content">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle"><i class="far fa-envelope"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Some 1</a></li>
+                <li><a href="#">Some 2</a></li>
+                <li><a href="#">Some 3</a></li>
+                <li><a href="#">Some</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="messages-link dropdown-toggle"><i class="far fa-bell"></i><span class="badge">12</span></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Some 1</a></li>
+                <li><a href="#">Some 2</a></li>
+            </ul>
+        </li>
+        <li class="dropdown toggle-menu"><a href="#" class="dropdown-toggle"><i class="far fa-bars"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="#">Георгий Решетников</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- Section header   End--> <aside class="sidebar sidebar__left">
+    <div class="sidebar__logo">
+        <img src="img/logo.png" alt="">
+    </div>
+
+    <nav>
+        <ul class="sidebar__navigation">
+            <li><a href=""><i class="icon fas fa-money-bill"></i>Balances</a></li>
+            <li><a href=""><i class="icon fal fa-chart-pie"></i>Trading</a></li>
+            <li><a href=""><i class="icon fas fa-arrows-alt-h"></i>Transactions</a></li>
+            <li><a href=""><i class="icon far fa-shield-check"></i>Bot arbitrage</a></li>
+            <li><a href=""><i class="icon fal fa-id-card"></i>Arbitrage</a></li>
+        </ul>
+        <div class="sidebar__btn-buy__wrap">
+            <a class="sidebar__btn-buy" href="#"><span class="fas fa-plus"></span>buy crypto</a>
+        </div>
+        <ul class="sidebar__navigation">
+            <li><a href=""><i class="fal fa-sliders-h"></i>Settings</a></li>
+            <li><a href=""><i class="far fa-info-square"></i>Help</a></li>
+        </ul>
+    </nav>
+</aside>
+    <main class="content content--profile">
+        <button class="toggle-sidebar" type="button"><i class="fas fa-caret-right"></i>
+        </button>
+        <div class="content__top">
+            <div class="section section--profile profile">
+                <div class="profile__about">
+                    <div class="profile__about__image">
+                        <div class="profile__avatar-wrap"> <img src="img/photo-profile.jpg" alt=""> </div> <a class="btn-border--light popup-link" href="#">deposit game account</a> </div>
+                    <div class="profile__about__info">
+                        <div class="profile__name">Георгий Решетников</div>
+                        <div class="profile__description">
+                            <div class="profile__description__row profile__description__row--images">
+                                <div class="b-column b-column--title">Projects:</div>
+                                <div class="b-column b-column--value">
+                                    <ul class="list">
+                                        <li><img src="img/icon-game__1.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__2.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__3.jpg" alt=""></li>
+                                        <li><img src="img/icon-game__4.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">joined network:</div>
+                                <div class="b-column b-column--value">13.04.2016</div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">Total funds:</div>
+                                <div class="b-column b-column--value">473 897.39 USD</div>
+                            </div>
+                            <div class="profile__description__row profile__description__row--info">
+                                <div class="b-column b-column--title">Last transaction:</div>
+                                <div class="b-column b-column--value">0.49573965 BTC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__bottom">
+                    <div class="section__title">Latest Transactions</div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>In/Out</th>
+                                    <th>Currency</th>
+                                    <th>Amount</th>
+                                    <th>Destination</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Sent</td>
+                                    <td>DASH</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Recieved</td>
+                                    <td>BTC</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15.05.2018</td>
+                                    <td>Recieved</td>
+                                    <td>YOTA</td>
+                                    <td>23.589309</td>
+                                    <td>from poker dom</td>
+                                    <td>
+                                        <a href="#" class="far fa-ellipsis-h"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="buttons-wrap"> <a href="#" class="btn--dark" href="#">Send</a> <a href="#" class="btn--light" href="#">Recieve</a> </div>
+                </div>
+            </div>
+            <div class="currency">
+                <div class="currency__list">
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--red"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Bitcoin</div>
+                                    <div class="currency__percent"><span>23</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-bitcoin.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>17.38</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--yellow"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">civic</div>
+                                    <div class="currency__percent"><span>3</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-civic.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>9.56</span> USD <i class="fal fa-arrow-alt-down"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--light-blue"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Litecoin</div>
+                                    <div class="currency__percent"><span>1.8</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-litecoin.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>7.12</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--green"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Dash</div>
+                                    <div class="currency__percent"><span>7.2</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-dash.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>1.68</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--blue"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">Etherium</div>
+                                    <div class="currency__percent"><span>45</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-etherium.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>367.38</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                    <div class="currency__item">
+                        <div class="currency__item__top">
+                            <div class="currency__description">
+                                <div class="currency__description__lable lable--pink"></div>
+                                <div class="currency__description__info">
+                                    <div class="currency__name">augur</div>
+                                    <div class="currency__percent"><span>23</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency__item__icon"> <img src="img/icon-augur.svg" alt=""> </div>
+                        <div class="currency__item__value"> <span>90.56</span> USD <i class="fal fa-arrow-alt-up"></i> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-deposite-plus"> <i class="fas fa-plus"></i>
+            <div class="btn-deposite-plus__inner"> <span class="btn-deposite-plus__content">
+						Deposit account:
+					</span>
+                <a class="popup-link" href="#popup-deposit"><img src="img/walet.png" alt=""> via cold wallet</a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
